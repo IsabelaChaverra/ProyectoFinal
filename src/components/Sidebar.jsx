@@ -70,6 +70,7 @@ const Sidebar = () => {
       >
         {showMenu ? <RiCloseFill /> : <RiMore2Fill />}
       </button>
+      {/* hola */}
     </>
   );
 };
