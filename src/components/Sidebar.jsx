@@ -21,13 +21,16 @@ const Sidebar = () => {
         {/* Profile */}
         <div className="flex flex-col items-center justify-center p-8 gap-2 h-[30vh]">
           <img
-            src="https://img.freepik.com/foto-gratis/anciano-sonriente-gafas_23-2148740051.jpg"
+            src="/public/icon.png"
             className="w-20 h-20 object-cover rounded-full ring-2 ring-gray-300"
           />
-          <h1 className="text-xl text-white font-bold">Jorge Luis Trejo</h1>
-          <p className="bg-primary-100 py-2 px-4 rounded-full text-white">
-            Pro level
-          </p>
+          <h1 className=" text-xl text-white font-bold">Daniel Vanegas</h1>
+          <a href="https://www.cesde.edu.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-primary-100 py-2 px-4 rounded-full text-white hover:bg-primmary-100/80 transition-colors cursor-pointer">
+          Estudiante Cesde
+          </a>
         </div>
         {/* Nav */}
         <div className="bg-primary-300 p-8 rounded-tr-[100px] h-[70vh] overflow-y-scroll flex flex-col justify-between gap-8">
@@ -36,30 +39,36 @@ const Sidebar = () => {
               href="#"
               className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
             >
-              <RiHome3Line /> Home
+              <RiHome3Line /> Inicio
             </a>
             <a
               href="#"
               className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
             >
-              <RiFileCopyLine /> Projects
+              <RiFileCopyLine /> Calificaciones
             </a>
             <a
               href="#"
               className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
             >
-              <RiWalletLine /> Invoices
+              <RiWalletLine /> Cursos
             </a>
             <a
               href="#"
               className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
             >
-              <RiPieChartLine /> Reports
+              <RiPieChartLine /> Reportes
+            </a>
+            <a
+              href="#"
+              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
+            >
+              <RiPieChartLine /> Cerrar sesion
             </a>
           </nav>
           <div className="bg-primary-900/50 text-white p-4 rounded-xl">
-            <p className="text-gray-400">Having troubles?</p>
-            <a href="#">Contact us</a>
+            <p className="text-gray-400"> Alguna duda?</p>
+            <a href="#">pregunta acá</a>
           </div>
         </div>
       </div>

@@ -14,55 +14,68 @@ function App() {
           {/* Card 1 */}
           <div className="bg-primary-100 p-8 rounded-xl text-gray-300 flex flex-col gap-6">
             <RiLineChartLine className="text-5xl" />
-            <h4 className="text-2xl">Earnings</h4>
-            <span className="text-5xl text-white">&euro; 8,350</span>
-            <span className="py-1 px-3 bg-primary-300/80 rounded-full">
-              + 10% since last month
+            <h4 className="text-2xl">CALIFICACIONES</h4>
+            <h3 className="text-xl">Base de datos</h3>
+            <span className="text-5xl text-white">3,40</span>
+            <span className="py-1 px-3 bg-green-700 rounded-full">
+              APROBADO
             </span>
           </div>
           {/* Card 2 */}
           <div className="p-4 bg-white rounded-xl flex flex-col justify-between gap-4 drop-shadow-2xl">
             <div className="flex items-center gap-4 bg-primary-100/10 rounded-xl p-4">
               <span className="bg-primary-100 text-gray-300 text-2xl font-bold p-4 rounded-xl">
-                98
+                FR
               </span>
               <div>
-                <h3 className="font-bold">Rank</h3>
-                <p className="text-gray-500">In top 30%</p>
+                <h3 className="font-bold">Fronted II</h3>
+                <p className="text-gray-500">4,50</p>
+                <p className="text-green-500">Aprobado</p>
               </div>
             </div>
             <div className="bg-primary-100/10 rounded-xl p-4">
               <div className="flex items-center gap-4 mb-4">
                 <span className="bg-primary-100 text-gray-300 text-2xl font-bold p-4 rounded-xl">
-                  32
+                  BK
                 </span>
                 <div>
-                  <h3 className="font-bold">Projects</h3>
-                  <p className="text-gray-500">8 this month</p>
+                  <h3 className="font-bold">Back II</h3>
+                  <p className="text-gray-500">2,78</p>
+                  <p className="text-red-600">No Aprobado</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-gray-500 text-sm">
-                <span className="bg-primary-100/20 py-1 px-4 rounded-full">
-                  Mobile app
-                </span>
-                <span className="bg-primary-100/20 py-1 px-4 rounded-full">
-                  Branding
-                </span>
+                <a href="https://platzi.com/cursos/backend/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary-100/20 py-2 px-4 rounded-full text-gray-600 hover:bg-primmary-100/80 transition-colors cursor-pointer"
+                > Repaso</a>
+                <div className="group relative inline-block">
+                  <span className="bg-primary-100/20 py-2 px-4 rounded-full cursor-pointer">
+                    info..
+                  </span>
+                  <div className="absolute invisible group-hover:visible z-10 w-48 p-2 mt-2 text-sm text-white bg-primary-100 rounded-md shadow-lg left-1/2 transform -translate-x-1/2">
+                    "Bienvenidos al curso de Backend.
+                    Aquí aprenderán a construir la lógica interna de aplicaciones, gestionar bases de datos y crear APIs que conecten el mundo digital.
+                    Nuestro enfoque será práctico, claro y directo, para que puedan desarrollar proyectos sólidos desde el primer día."
+                    <div className="absolute -top-1 left-1/2 w-3 h-3 bg-primary-100/20  transform rotate-45 -translate-x-1/2"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           {/* Card 3 */}
           <div className="col-span-1 md:col-span-2 flex flex-col justify-between">
-            <h1 className="text-2xl font-bold mb-8">Your projects</h1>
+            <h1 className="text-2xl font-bold mb-8">MENSAJES</h1>
             <div className="bg-white p-8 rounded-xl shadow-2xl">
               <div className="flex items-center gap-4 mb-8">
                 <img
-                  src="https://img.freepik.com/foto-gratis/retrato-mujer-mayor-cerca_23-2149207185.jpg"
+                  src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww"
                   className="w-14 h-14 object-cover rounded-full"
                 />
                 <div>
-                  <h3 className="font-bold">Logo design for Bakery</h3>
-                  <p className="text-gray-500">1 day remaining</p>
+                  <h3 className="font-bold">Juan Alberto Perez Florez</h3>
+                  <p className="text-gray-500">+2 mensaje nuevo</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 mb-4">
@@ -71,16 +84,17 @@ function App() {
                   className="w-14 h-14 object-cover rounded-full"
                 />
                 <div>
-                  <h3 className="font-bold">Logo design for Bakery</h3>
-                  <p className="text-gray-500">1 day remaining</p>
+                  <h3 className="font-bold">Luisa Rodriguez Alvarez</h3>
+                  <p className="text-gray-500">+4 mensajes nuevos</p>
                 </div>
+                
               </div>
               <div className="flex justify-end">
                 <a
                   href="#"
                   className="hover:text-primary-100 transition-colors hover:underline"
                 >
-                  See all projects
+                  Ver todo
                 </a>
               </div>
             </div>
