@@ -15,7 +15,7 @@ function App() {
           <div className="bg-primary-100 p-8 rounded-xl text-gray-300 flex flex-col gap-6">
             <RiLineChartLine className="text-5xl" />
             <h4 className="text-2xl">CALIFICACIONES</h4>
-            <h3 className="text-xl">Base de datos</h3>
+            <h3 className="text-xl">Base de datoss</h3>
             <span className="text-5xl text-white">3,40</span>
             <span className="py-1 px-3 bg-green-700 rounded-full">
               APROBADO
