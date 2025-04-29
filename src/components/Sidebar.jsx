@@ -11,6 +11,9 @@ import {
 
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const usuario = JSON.parse(localStorage.getItem("usuario"));
+
   return (
     <>
       <div
@@ -23,13 +26,18 @@ const Sidebar = () => {
           <img
             src="/public/icon.png"
             className="w-20 h-20 object-cover rounded-full ring-2 ring-gray-300"
+            alt="Profile"
           />
-          <h1 className=" text-xl text-white font-bold">Daniel Vanegas</h1>
-          <a href="https://www.cesde.edu.co/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-primary-100 py-2 px-4 rounded-full text-white hover:bg-primmary-100/80 transition-colors cursor-pointer">
-          Estudiante Cesde
+          <h1 className="text-xl text-white font-bold">
+            {usuario?.nombre || "Usuario"}
+          </h1>
+          <a
+            href="https://www.cesde.edu.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary-100 py-2 px-4 rounded-full text-white hover:bg-primary-100/80 transition-colors cursor-pointer"
+          >
+            Estudiante Cesde
           </a>
         </div>
         {/* Nav */}
@@ -59,19 +67,24 @@ const Sidebar = () => {
             >
               <RiPieChartLine /> Reportes
             </a>
-            <a
-              href="#"
-              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
+            <button
+              onClick={() => {
+                localStorage.removeItem("token");
+                localStorage.removeItem("usuario");
+                window.location.href = "/";
+              }}
+              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors text-left"
             >
-              <RiPieChartLine /> Cerrar sesion
-            </a>
+              <RiPieChartLine /> Cerrar sesión
+            </button>
           </nav>
           <div className="bg-primary-900/50 text-white p-4 rounded-xl">
-            <p className="text-gray-400"> Alguna duda?</p>
-            <a href="#">pregunta acá</a>
+            <p className="text-gray-400">¿Alguna duda?</p>
+            <a href="#">Pregunta acá</a>
           </div>
         </div>
       </div>
+
       {/* Button mobile */}
       <button
         onClick={() => setShowMenu(!showMenu)}
@@ -79,8 +92,6 @@ const Sidebar = () => {
       >
         {showMenu ? <RiCloseFill /> : <RiMore2Fill />}
       </button>
-      {/* holaoooo */}
-      {/* uno */}
     </>
   );
 };

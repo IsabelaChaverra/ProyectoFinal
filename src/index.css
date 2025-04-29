@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Estilos para arreglar botones de SweetAlert2 */
+.swal2-confirm,
+.swal2-cancel {
+  background-color: #3085d6 !important; /* Color azul clásico de SweetAlert */
+  color: white !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+  transition: background-color 0.3s !important;
+}
+
+.swal2-confirm:hover,
+.swal2-cancel:hover {
+  background-color: #2563eb !important; /* Azul más oscuro al hacer hover */
+}
+
+
