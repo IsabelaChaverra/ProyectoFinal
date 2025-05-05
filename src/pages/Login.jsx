@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { obtenerUsuario } from "../services/api";
-import { generarToken, mostrarError, mostrarExito } from "../helpers/funciones";
+import { generarToken, mostrarError, mostrarExito} from "../helpers/funciones";
 
 export default function Login() {
   const [usuario, setUsuario] = useState("");
@@ -29,6 +29,7 @@ export default function Login() {
       mostrarError("Error de inicio de sesión", "Usuario o contraseña incorrectos");
     }
   };
+
 
   return (
     <div className="flex items-center justify-center h-screen bg-gradient-to-r from-blue-600 to-purple-700">

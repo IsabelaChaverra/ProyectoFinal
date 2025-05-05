@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 // Icons
 import {
   RiHome3Line,
@@ -8,6 +9,9 @@ import {
   RiMore2Fill,
   RiCloseFill,
 } from "react-icons/ri";
+import { Link } from "react-router-dom"; 
+import Contacto from "../pages/Contacta";
+import { Navigate } from "react-router-dom";
 
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -71,6 +75,7 @@ const Sidebar = () => {
               onClick={() => {
                 localStorage.removeItem("token");
                 localStorage.removeItem("usuario");
+                
                 window.location.href = "/";
               }}
               className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors text-left"
@@ -80,7 +85,12 @@ const Sidebar = () => {
           </nav>
           <div className="bg-primary-900/50 text-white p-4 rounded-xl">
             <p className="text-gray-400">¿Alguna duda?</p>
-            <a href="#">Pregunta acá</a>
+            
+              {/* Esta es la duda , quiero poder navegar entre componentes usando la propiedad LINK 
+              , no se si parte del error es aca con las importaciones o en el enrutador, por al momento de dartle click a esto
+              en la pagina principal, me lleva a pagina blanca y me muestra un error*/}
+            <Link to="./Contacta">Pregunta acá</Link>
+            
           </div>
         </div>
       </div>

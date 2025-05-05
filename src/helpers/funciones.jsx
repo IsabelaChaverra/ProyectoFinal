@@ -1,5 +1,7 @@
 import Swal from "sweetalert2";
 
+
+
 // Función para generar un token aleatorio
 export function generarToken() {
   return (
@@ -18,11 +20,16 @@ export function mostrarError(titulo, mensaje) {
   });
 }
 
-export function mostrarExito(titulo, mensaje) {
+
+export function mostrarExito(titulo, mensaje,icono) {
   return Swal.fire({
-    title: titulo,
-    text: mensaje,
+    title: "Bievenido",
+    text: "Ha iniciado seción de forma correcta!",
     icon: "success",
     confirmButtonColor: "#3085d6"
   });
 }
+
+
+
+
