@@ -7,9 +7,9 @@ export let usuarios = [
     },
     {
       id: 2,
-      nombre: "Camila Perez",
-      usuario: "camila",
-      contrasena: "camila",
+      nombre: "Isabela Cano",
+      usuario: "isabela",
+      contrasena: "isabela",
     },
     {
       id: 3,

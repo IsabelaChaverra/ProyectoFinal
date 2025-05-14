@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// Icons
 import {
   RiHome3Line,
   RiFileCopyLine,
@@ -8,6 +7,7 @@ import {
   RiMore2Fill,
   RiCloseFill,
 } from "react-icons/ri";
+import { mostrarConfirmacion } from "../helpers/funciones";
 
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,7 +21,6 @@ const Sidebar = () => {
           showMenu ? "left-0" : "-left-full"
         }`}
       >
-        {/* Profile */}
         <div className="flex flex-col items-center justify-center p-8 gap-2 h-[30vh]">
           <img
             src="/public/icon.png"
@@ -40,7 +39,6 @@ const Sidebar = () => {
             Estudiante Cesde
           </a>
         </div>
-        {/* Nav */}
         <div className="bg-primary-300 p-8 rounded-tr-[100px] h-[70vh] overflow-y-scroll flex flex-col justify-between gap-8">
           <nav className="flex flex-col gap-8">
             <a
@@ -69,9 +67,18 @@ const Sidebar = () => {
             </a>
             <button
               onClick={() => {
-                localStorage.removeItem("token");
-                localStorage.removeItem("usuario");
-                window.location.href = "/";
+                mostrarConfirmacion(
+                  "¿Cerrar sesión?",
+                  "¿Estás seguro que deseas cerrar sesión?",
+                  () => {
+                    localStorage.removeItem("token");
+                    localStorage.removeItem("usuario");
+                    window.location.href = "/";
+                  },
+                  () => {
+                    // No hacer nada si se cancela
+                  }
+                );
               }}
               className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors text-left"
             >
@@ -85,7 +92,6 @@ const Sidebar = () => {
         </div>
       </div>
 
-      {/* Button mobile */}
       <button
         onClick={() => setShowMenu(!showMenu)}
         className="lg:hidden fixed right-4 bottom-4 text-2xl bg-primary-900 p-2.5 rounded-full text-white z-50"
