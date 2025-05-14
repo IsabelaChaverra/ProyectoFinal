@@ -31,3 +31,8 @@
 2. cd ProyectoFinal
 3. npm install
 4. npm start
+
+🌟 Equipo
+✧ 👩‍💻 Isabela Chaverra Cano - 1038868170
+✧ 👨‍💻 Mauricio Guaman - 1032010449
+✧ 👨‍💻 Daniel Vanegas - 1001420585
