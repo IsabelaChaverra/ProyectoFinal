@@ -1,38 +1,33 @@
-## 🚀 Como ejecutarlo en local
+#  Gestor Académico Inteligente
 
-Necesitarás tener instalado `node.js` a partir de la versión 14 y tener acceso a una terminal para seguir los siguientes pasos:
+## 🔐 Acceso Seguro
+✦ `👤 Usuario:` admin  
+✦ `🔑 Contraseña:` admin  
+✦ `🚪 Login/Logout` intuitivo  
+✦ `🛡️ Rutas protegidas` por rol  
 
->
-
-1. Necesitamos clonar el proyecto añadiendo la siguiente linea de comando en una terminal
-
-```
-git clone https://github.com/jotredev/dashboard-profile.git
-```
-
-> 2. Entramos a la carpeta que acabamos de clonar e instalamos las dependencias necesarias
-
-```
-npm install
-#
-yarn
-```
-
-> 3. Ejecutamos nuestro proyecto en local
-
-```
-npm dev
-#
-yarn dev
-```
-
-💻 En computadora
-
-> <img width="1200" alt="Captura de Pantalla 2022-10-19 a la(s) 15 21 29" src="https://user-images.githubusercontent.com/50961956/197305450-ba425677-0595-4937-8433-fbf1d3c12d67.png">
+![image](https://github.com/user-attachments/assets/981333c9-75ca-4937-9645-e532724f0d69)
+--------------------------------------------------------
+![image](https://github.com/user-attachments/assets/0c707e7c-d809-430f-a6cb-0516f918ae97)
 
 
-📱 En móvil
+## 📚 Funcionalidades Académicas  
+▸ `📊 Visualizador` de notas por curso  
+▸ `✅ Estado` aprobado/reprobado  
+▸ `📖 Información` completa de materias  
+▸ `🔗 Acceso directo` a contenidos  
 
-> <img width="300" alt="Captura de Pantalla 2022-10-19 a la(s) 15 22 11" src="https://user-images.githubusercontent.com/50961956/197305475-6edc4093-359b-4ac1-a711-9cae7e562962.png"> <img width="300" alt="Captura de Pantalla 2022-10-19 a la(s) 15 22 26" src="https://user-images.githubusercontent.com/50961956/197305489-31b9e154-5f09-4506-8c41-e3b69cf37fe2.png">
+![image](https://github.com/user-attachments/assets/2c2de8fd-dba1-4355-a118-d6c5f0ae514d)
 
 
+## 🛠️ Stack Tecnológico  
+◈ `⚛️ React.js` - Interfaz dinámica  
+◈ `🧭 React Router` - Navegación  
+◈ `🌀 Context API` - Estado global  
+
+## � Instalación
+```bash
+1. git clone https://github.com/IsabelaChaverra/ProyectoFinal.git
+2. cd ProyectoFinal
+3. npm install
+4. npm start
