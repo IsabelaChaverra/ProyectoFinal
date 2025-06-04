@@ -55,4 +55,24 @@ export function mostrarConfirmacion(titulo, mensaje, onConfirmar, onCancelar) {
     }
   });
 }
-
+export function alertaRedireccion(redireccion, titulo, mensaje, icono, url) {
+  let timerInterval;
+  Swal.fire({
+    title: titulo,
+    html: mensaje,
+    timer: 2000,
+    icon: icono,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const timer = Swal.getPopup().querySelector("b");
+      timerInterval = setInterval(() => {
+        timer.textContent = `${Swal.getTimerLeft()}`;
+      }, 100);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+      redireccion(url);
+    },
+  });
+}

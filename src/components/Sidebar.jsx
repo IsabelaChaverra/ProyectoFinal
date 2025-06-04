@@ -8,6 +8,7 @@ import {
   RiCloseFill,
 } from "react-icons/ri";
 import { mostrarConfirmacion } from "../helpers/funciones";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,9 +18,8 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`bg-primary-900 h-full fixed lg:static w-[80%] md:w-[40%] lg:w-full transition-all z-50 duration-300 ${
-          showMenu ? "left-0" : "-left-full"
-        }`}
+        className={`bg-primary-900 h-full fixed lg:static w-[80%] md:w-[40%] lg:w-full transition-all z-50 duration-300 ${showMenu ? "left-0" : "-left-full"
+          }`}
       >
         <div className="flex flex-col items-center justify-center p-8 gap-2 h-[30vh]">
           <img
@@ -41,30 +41,28 @@ const Sidebar = () => {
         </div>
         <div className="bg-primary-300 p-8 rounded-tr-[100px] h-[70vh] overflow-y-scroll flex flex-col justify-between gap-8">
           <nav className="flex flex-col gap-8">
-            <a
-              href="#"
-              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
-            >
+
+            <Link to="/home"
+            className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
               <RiHome3Line /> Inicio
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
-            >
-              <RiFileCopyLine /> Calificaciones
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
-            >
-              <RiWalletLine /> Cursos
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
-            >
-              <RiPieChartLine /> Reportes
-            </a>
+            </Link>
+           <Link
+           to="vernotasalum"
+           className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
+              <RiFileCopyLine /> Ver  Calificaciones
+           </Link>
+            <Link
+           to="gestionnotaspro"
+           className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
+              <RiWalletLine /> Modificar  Calificaciones
+           </Link>
+           <Link
+           to=""
+           className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
+              <RiPieChartLine /> Cursos   
+           </Link>
+         
+          
             <button
               onClick={() => {
                 mostrarConfirmacion(
@@ -87,7 +85,14 @@ const Sidebar = () => {
           </nav>
           <div className="bg-primary-900/50 text-white p-4 rounded-xl">
             <p className="text-gray-400">¿Alguna duda?</p>
-            <a href="#">Pregunta acá</a>
+            <Link
+              to="/contacto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className0="hover:underline text-primary-100 hover:text-white transition-colors">
+
+              Pregunta acá
+            </Link>
           </div>
         </div>
       </div>

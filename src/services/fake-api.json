@@ -1,0 +1,102 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Jaime Zapata",
+      "usuario": "admin",
+      "contrasena": "admin"
+      
+    },
+    {
+      "id": "2",
+      "nombre": "Isabela Cano",
+      "usuario": "isabela",
+      "contrasena": "isabela"
+    },
+    {
+      "id": "3",
+      "nombre": "Laura Gómez",
+      "usuario": "laura",
+      "contrasena": "laura123"
+     
+    },
+    {
+      "id": "4",
+      "nombre": "Carlos Martínez",
+      "usuario": "carlos",
+      "contrasena": "carlos321"
+     
+    },
+    {
+      "id": "5",
+      "nombre": "Sofía Hernández",
+      "usuario": "sofia",
+      "contrasena": "sofia456"
+      
+    },
+    {
+      "id": "6",
+      "nombre": "Andrés Torres",
+      "usuario": "andres",
+      "contrasena": "torres789"
+     
+    },
+    {
+      "id": "7",
+      "nombre": "Valentina Ruiz",
+      "usuario": "valentina",
+      "contrasena": "valen123"
+     
+    },
+    {
+      "id": "8",
+      "nombre": "Diego Mendoza",
+      "usuario": "diego",
+      "contrasena": "diegom"
+    }
+  ],
+  "calificaiones":[
+
+    {
+      "id": "e17",
+      "idUsuario": "2",
+      "materia": "Fronted II",
+      "calificacion": "3,5",
+      "fecha": "2025-05-10",
+      "comentario": "Buen desempeño en el proyecto final, pero necesita mejorar en la parte de diseño."
+    },
+    {
+      "id": "e18",
+      "calificacion": "2,4",
+      "fecha": "2024-10-01",
+      "asignatura": "Fronted II",
+      "idUsuario": "3",
+      "comentario": "Necesita mejorar en la comprensión de los conceptos básicos de HTML y CSS."
+    },
+    {
+       "id": "e17",
+      "idUsuario": "4",
+      "materia": "Base de datos II",
+      "calificacion": "3,5",
+      "fecha": "2025-05-10",
+      "comentario": "Buen desempeño en el proyecto final,mejora la logica de consultas."
+
+    },
+    {
+       "id": "e17",
+      "idUsuario": "5",
+      "materia": "Backend II",
+      "calificacion": "3,5",
+      "fecha": "2025-05-10",
+      "comentario": "Necesita mejorar en la comprensión de los conceptos básicos."
+    },
+    {
+       "id": "e17",
+      "idUsuario": "6",
+      "materia": "Backend II",
+      "calificacion": "4,0",
+      "fecha": "2025-05-10",
+      "comentario": "Excelente desempeño en el proyecto final, muy buena comprensión de los conceptos."
+    }
+  ]
+}
