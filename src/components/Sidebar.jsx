@@ -49,18 +49,14 @@ const Sidebar = () => {
            <Link
            to="vernotasalum"
            className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
-              <RiFileCopyLine /> Ver  Calificaciones
+              <RiFileCopyLine /> Ver Asistencia
            </Link>
             <Link
            to="gestionnotaspro"
            className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
-              <RiWalletLine /> Modificar  Calificaciones
+              <RiWalletLine /> Modificar  Asistencia
            </Link>
-           <Link
-           to=""
-           className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
-              <RiPieChartLine /> Cursos   
-           </Link>
+         
          
           
             <button
