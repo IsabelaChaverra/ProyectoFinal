@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   RiHome3Line,
   RiFileCopyLine,
@@ -18,9 +18,11 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`bg-primary-900 h-full fixed lg:static w-[80%] md:w-[40%] lg:w-full transition-all z-50 duration-300 ${showMenu ? "left-0" : "-left-full"
-          }`}
+        className={`bg-primary-900 h-full fixed lg:static w-[80%] md:w-[40%] lg:w-full transition-all z-50 duration-300 ${
+          showMenu ? "left-0" : "-left-full"
+        }`}
       >
+        {/* Header del usuario */}
         <div className="flex flex-col items-center justify-center p-8 gap-2 h-[30vh]">
           <img
             src="/public/icon.png"
@@ -39,26 +41,31 @@ const Sidebar = () => {
             Estudiante Cesde
           </a>
         </div>
+
+        {/* Navegación */}
         <div className="bg-primary-300 p-8 rounded-tr-[100px] h-[70vh] overflow-y-scroll flex flex-col justify-between gap-8">
           <nav className="flex flex-col gap-8">
-
-            <Link to="/home"
-            className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
+            <Link
+              to="/home"
+              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
+            >
               <RiHome3Line /> Inicio
             </Link>
-           <Link
-           to="vernotasalum"
-           className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
-              <RiFileCopyLine /> Ver Asistencia
-           </Link>
+
             <Link
-           to="gestionnotaspro"
-           className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors">
-              <RiWalletLine /> Modificar  Asistencia
-           </Link>
-         
-         
-          
+              to="/home/asistencia"
+              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
+            >
+              <RiFileCopyLine /> Ver Asistencia
+            </Link>
+
+            <Link
+              to="/home/editar-asistencia"
+              className="flex items-center gap-4 text-white py-2 px-4 rounded-xl hover:bg-primary-900/50 transition-colors"
+            >
+              <RiWalletLine /> Modificar Asistencia
+            </Link>
+
             <button
               onClick={() => {
                 mostrarConfirmacion(
@@ -68,9 +75,6 @@ const Sidebar = () => {
                     localStorage.removeItem("token");
                     localStorage.removeItem("usuario");
                     window.location.href = "/";
-                  },
-                  () => {
-                    // No hacer nada si se cancela
                   }
                 );
               }}
@@ -79,20 +83,23 @@ const Sidebar = () => {
               <RiPieChartLine /> Cerrar sesión
             </button>
           </nav>
+
+          {/* Ayuda */}
           <div className="bg-primary-900/50 text-white p-4 rounded-xl">
             <p className="text-gray-400">¿Alguna duda?</p>
             <Link
               to="/contacto"
               target="_blank"
               rel="noopener noreferrer"
-              className0="hover:underline text-primary-100 hover:text-white transition-colors">
-
+              className="hover:underline text-primary-100 hover:text-white transition-colors"
+            >
               Pregunta acá
             </Link>
           </div>
         </div>
       </div>
 
+      {/* Botón de menú móvil */}
       <button
         onClick={() => setShowMenu(!showMenu)}
         className="lg:hidden fixed right-4 bottom-4 text-2xl bg-primary-900 p-2.5 rounded-full text-white z-50"

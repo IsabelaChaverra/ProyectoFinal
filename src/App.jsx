@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import Principal from "./pages/Principal";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Sidebar />
       <main className="lg:col-span-3 xl:col-span-5 bg-gray-100 p-8 h-[100vh] overflow-y-scroll">
         <Header />
-        <Principal />
+        <Outlet />
       </main>
     </div>
   );
