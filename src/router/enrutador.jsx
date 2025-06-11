@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 58bcfc051858db9e96e1182521aae64db9dc283f
 import RutaProtegida from "../components/RutaProtegida";
 import Login from "../pages/Login";
 import ContactPage from "../pages/Contacto";
@@ -17,7 +21,10 @@ export let enrutador = [
         index: true,
         element: <Principal />, // ← Página por defecto
       },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 58bcfc051858db9e96e1182521aae64db9dc283f
       {
         path: "asistencia",
         element: <AttendanceViewPage />,
@@ -25,6 +32,14 @@ export let enrutador = [
       {
         path: "editar-asistencia",
         element: <AttendanceEditPage />, 
+      },
+      {
+        path: "asistencia",
+        element: <AttendanceViewPage />,
+      },
+      {
+        path: "editar-asistencia",
+        element: <AttendanceEditPage />,
       },
     ],
   },
