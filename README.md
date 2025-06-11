@@ -18,8 +18,6 @@
 ▸ `📖 Información` completa de materias  
 ▸ `🔗 Acceso directo` a contenidos  
 
-![image](https://github.com/user-attachments/assets/2c2de8fd-dba1-4355-a118-d6c5f0ae514d)
-
 
 ## 🛠️ Stack Tecnológico  
 ◈ `⚛️ React.js` - Interfaz dinámica  
