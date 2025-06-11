@@ -22,7 +22,6 @@ const AttendanceCard = ({ attendance, onUpdate, isViewOnly = false }) => {
       <div className="flex items-center gap-4 mb-4">
         <UserIcon className="w-10 h-10 text-blue-500" />
         <div>
-<<<<<<< HEAD
           <h3 className="text-lg font-bold">
   {attendance?.student?.user?.name || "Nombre no disponible"}
 </h3>
@@ -30,10 +29,6 @@ const AttendanceCard = ({ attendance, onUpdate, isViewOnly = false }) => {
   {attendance?.course?.name || "Curso no disponible"}
 </span>
 
-=======
-          <h3 className="text-lg font-bold">{attendance.student.user.name}</h3>
-          <p className="text-sm text-gray-500">Estudiante</p>
->>>>>>> 58bcfc051858db9e96e1182521aae64db9dc283f
         </div>
       </div>
 
