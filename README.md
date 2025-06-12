@@ -8,7 +8,8 @@
 
 ![image](https://github.com/user-attachments/assets/981333c9-75ca-4937-9645-e532724f0d69)
 --------------------------------------------------------
-![image](https://github.com/user-attachments/assets/0c707e7c-d809-430f-a6cb-0516f918ae97)
+![image](https://github.com/user-attachments/assets/9cc291b0-c3b1-41ce-936b-0da4881e5cfa)
+
 
 
 ## 📚 Funcionalidades Académicas  
@@ -16,8 +17,6 @@
 ▸ `✅ Estado` aprobado/reprobado  
 ▸ `📖 Información` completa de materias  
 ▸ `🔗 Acceso directo` a contenidos  
-
-![image](https://github.com/user-attachments/assets/2c2de8fd-dba1-4355-a118-d6c5f0ae514d)
 
 
 ## 🛠️ Stack Tecnológico  
