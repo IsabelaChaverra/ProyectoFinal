@@ -1,0 +1,7 @@
+id,Fecha,Estado,student.id,student.user.id,Estudiante,student.user.email,student.user.password,student.user.phone,student.user.userType,student.grade,student.bornDate,student.direction,course.id,Curso
+1,2025-06-03,PRESENT,1,5,Ana López,ana.lopez@example.com,password123,3001234567,Student,10,2007-05-14,Calle 10 #12-34,1,Álgebra
+2,2025-06-03,PRESENT,2,7,Luisa Martínez,luisa.martinez@example.com,luisa789,3023456789,Student,11,2006-08-22,Carrera 45 #78-90,1,Álgebra
+3,2025-06-03,ABSENT,3,9,Sofía Ríos,sofia.rios@example.com,sofia654,3045678901,Student,9,2008-12-03,Avenida 9 #20-30,2,Física Clásica
+4,2025-06-04,PRESENT,1,5,Ana López,ana.lopez@example.com,password123,3001234567,Student,10,2007-05-14,Calle 10 #12-34,2,Física Clásica
+5,2025-06-04,PRESENT,3,9,Sofía Ríos,sofia.rios@example.com,sofia654,3045678901,Student,9,2008-12-03,Avenida 9 #20-30,1,Álgebra
+6,2025-06-04,ABSENT,3,9,Sofía Ríos,sofia.rios@example.com,sofia654,3045678901,Student,9,2008-12-03,Avenida 9 #20-30,1,Álgebra
